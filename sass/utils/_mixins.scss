@@ -1,0 +1,21 @@
+@mixin bordered($color:black, $type:solid) {
+    border: 1px $type $color;
+    border-bottom: 1px $type $color ;
+}
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin generateIcons($iconlist) {
+
+    @each $iconName in $iconList {
+        .icon-#{$iconName} {
+            background-color: teal;
+            background-image: url("../images/#{$iconName}.svg");
+        }
+    }
+
+}

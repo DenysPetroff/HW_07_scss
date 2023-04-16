@@ -1,3 +1,40 @@
 @import './utils/variables';
+@import './utils/placeholders';
 @import './base/normalise';
+@import './components/page-header';
+@import './components/logo';
 
+// .notification-error {
+//     @extend %notification;
+//     background-color: red;
+
+// }
+// .notification-success {
+//     @extend %notification;
+//     background-color: green;
+// }
+// .features-list {
+//     @extend %list;
+// }
+// p {
+//     @include bordered();
+// }
+// div {
+//     @include bordered($type:dashed);
+// }
+// div {
+//     @extend %centeredFlex;
+// }
+// div {
+//     @include centeredFlex();
+    
+// }
+// button {
+//     @include centeredFlex(inline-flex);
+// }
+
+
+
+
+$icons: 'facebook', 'github', 'linkedin', 'twitter';
+@include generateIcons($icons);
